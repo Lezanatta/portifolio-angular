@@ -1,0 +1,27 @@
+@import '../../variaveis-cores.scss';
+
+footer{
+  border-top: 1px solid $cor-secundaria;
+  flex-direction: column;
+  margin-top: 2.6em;
+  padding: 1.9em;
+  font-size: 12px;
+}
+
+footer h4{
+  padding: 1.2em;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+footer p{
+  font-style: italic;
+  color: white;
+}
+
+footer h4 .icon {
+  margin-left: 1.2em;
+  color: white !important;
+}
+

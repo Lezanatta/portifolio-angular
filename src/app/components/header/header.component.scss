@@ -1,0 +1,41 @@
+@import '../../variaveis-cores.scss';
+
+.header-content{
+  padding: 5em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 2em auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: .5s;
+}
+
+.brand, .links{
+  cursor: pointer;
+}
+
+h2, a{
+  color: rgb(255, 255, 255);
+}
+
+.header-content img{
+  width: 60px;
+  margin-right: 1.6em;
+  border-radius: 30px;
+}
+
+.links li{
+  margin-right: 3.5em;
+}
+
+header.rolagem{
+  background-color: rgb(255, 255, 255);
+  padding: 1.2em;
+}
+
+header.rolagem h2, header.rolagem a{
+  color: $cor-secundaria;
+}
+

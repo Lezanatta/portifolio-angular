@@ -1,0 +1,40 @@
+<div class="container body-gradient" style="--cor1: #222222; --cor2: #000000; --cor3: #234768; --cor4: #34223f;">
+  <div class="title">
+    <h2>Projetos desenvolvidos</h2>
+  </div>
+  <div class="slider-images">
+    <input type="radio" name="btn-radio" id="radio1">
+    <input type="radio" name="btn-radio" id="radio2">
+    <input type="radio" name="btn-radio" id="radio3">
+
+    <div class="nav-manual">
+      <label for="radio1" [ngClass]="{'manual-btn': true, 'checked': imagemAtual === 'shopping.png'}" (click)="mudarImagem('shopping.png')"></label>
+      <label for="radio2" [ngClass]="{'manual-btn': true, 'checked': imagemAtual === 'viagens.png'}" (click)="mudarImagem('viagens.png')"></label>
+      <label for="radio3" [ngClass]="{'manual-btn': true, 'checked': imagemAtual === 'moments.png'}" (click)="mudarImagem('moments.png')"></label>
+    </div>
+
+    <div class="slide-content">
+      <div class="slide-box">
+        <a href="{{repositorio}}" target="_blank">
+          <img src="../../../assets/{{imagemAtual}}" alt="slide">
+        </a>
+      </div>
+      <div class="descricao-imagem">
+        @if(imagemAtual === 'shopping.png'){
+          Projeto que simula um shopping, contém alguns produtos que você pode alterar, excluir, cadastrar e consultar.
+          O projeto também contém integração com Identity Server com front-end, porém, não foi finalizado. Pretendo dar continuidade em breve.
+        }
+        @if(imagemAtual === 'viagens.png'){
+          Projeto que simula um site para reserva de viagens. É possível consultar as viagens realizadas, adicionavar uma nova viagem, entre outras funcionalidades.
+          Esse projeto foi construído com o objetivo de utilizar serviços da AWS como Mensageria SQS e SNS, Lambdas, SES para envio de e-mails entre outros serviços.
+          O projeto serviu de estudo para por em práticas os conceitos relacionados a cloud.
+        }
+        @if(imagemAtual === 'moments.png'){
+          Projeto que serviu como estudo para utilização da tecnologia Angular. Se trata de um site, onde é possível compartilhar momentos.
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+

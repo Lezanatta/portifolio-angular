@@ -1,0 +1,46 @@
+@import '../../variaveis-cores.scss';
+
+.container-description{
+  width: 100%;
+  border-bottom: 1px solid $cor-secundaria;
+  padding: 6em;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.description-content{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.description-content h3{
+  text-align: center;
+  width: 30% !important;
+  padding: 1.2em;
+  color: $cor-primaria;
+  margin: 1.8em auto;
+  border-bottom: 1px solid $cor-secundaria;
+  width: 100%;
+}
+
+.description-content p{
+  margin: 1em;
+  line-height: 1.8em;
+  color: $texto-primario;
+}
+
+.description-content span{
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.p-information{
+  display: flex;
+  justify-content: flex-end;
+}

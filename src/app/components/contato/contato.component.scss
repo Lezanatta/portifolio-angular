@@ -1,0 +1,104 @@
+@import '../../variaveis-cores.scss';
+
+.title-contatos{
+  width: 80%;
+  margin: 0 auto;
+
+  h2{
+    padding: 1.4em 0;
+    border-bottom: 1px solid $cor-secundaria;
+    width: 25%;
+    margin-left: 1.6em;
+  }
+}
+
+.contato-content{
+  width: 40%;
+  margin: 100px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 40px;
+  height: 50%;
+}
+
+.icon-comp{
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.contato-information{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.text-important{
+  font-weight: 900;
+  font-size: 1.2em;
+
+}
+
+ul a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li{
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 8px 25px #00000038;
+  border-radius: 60px;
+  position: relative;
+  transition: .4s;
+}
+
+ul li:hover{
+  width: 250px;
+}
+
+ul li .icon{
+  color: #ccc;
+  font-size: 1.5em;
+  position: absolute;
+  transition: .4s;
+}
+
+ul li .text{
+  color: #ffffff;
+  transform: scale(0);
+  position: absolute;
+  transition: .4s;
+  transition-delay: .2s;
+}
+
+ul li:hover .text{
+  transform: scale(1);
+}
+
+ul li:hover .icon{
+  transform: scale(0);
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+  inset: 0;
+  opacity: 0;
+  border-radius: 60px;
+}
+
+ul li:hover::before{
+  opacity: 1;
+}
+
+
+
+

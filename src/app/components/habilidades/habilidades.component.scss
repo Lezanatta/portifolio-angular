@@ -1,0 +1,73 @@
+@import "../../variaveis-cores.scss";
+
+.container-habilidades{
+  width: 100%;
+  min-height: 70vh;
+}
+
+.title-habilidades{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.title-habilidades h2{
+    padding: 1.4em 0;
+    border-bottom: 1px solid $cor-secundaria;
+    width: 25%;
+    margin-left: 1.6em;
+    color: white;
+}
+
+.container-flip{
+  margin: 50px auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  padding: 6em;
+}
+
+.content-flip{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.content-flip:hover .flip{
+  transform: rotateY(180deg);
+}
+
+.flip{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.frente, .tras{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #ffffffa8;
+  backface-visibility: hidden;
+}
+
+.frente{
+  background-repeat: no-repeat;
+}
+
+.tras{
+  background-color: #465ec9;
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.tras p{
+  color: white !important;
+}

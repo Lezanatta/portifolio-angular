@@ -1,0 +1,17 @@
+<div class="container-habilidades body-gradient" style="--cor1: #484849; --cor2: #486dbd; --cor3: #646fb4; --cor4: #1c1181;">
+  <div class="title-habilidades">
+    <h2 class="text-gradient" style="--gradient-start: #f1ecf1be; --gradient-end: #a1d3fcc0;">Tecnologias conhecidas</h2>
+  </div>
+  <div class="container-flip">
+    <div class="content-flip" *ngFor="let card of flipCards">
+      <div class="flip">
+        <div class="frente" [style.backgroundImage]="'url(' + card.imageUrl + ')'"
+             [style.backgroundSize]="'contain'" [style.backgroundPosition]="'center'">
+        </div>
+        <div class="tras dflex-center">
+          <p>{{ card.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
